@@ -1,36 +1,23 @@
 using System;
 
-public class GenericClass<T>
+namespace OutDemo
 {
-    private T _data;
-
-    public GenericClass(T data)
+    class Program
     {
-        _data = data;
-    }
+        static void GetValues(out int num1, out int num2)
+        {
+            num1 = 10;
+            num2 = 20;
+        }
+        static void Main(string[] args)
+        {
+            int num1, num2;
 
-    public T GetData()
-    {
-        return _data;
-    }
+            
+            GetValues(out num1, out num2);
+            Console.WriteLine($"num1: {num1}, num2: {num2}");
+        }
 
-    public void SetData(T data)
-    {
-        _data = data;
-    }
-}
-
-class Program
-{
-    static void Main(string[] args)
-    {
-
-        GenericClass<int> myIntClass = new GenericClass<int>(42);
-
-
-        int myIntData = myIntClass.GetData();
-        Console.WriteLine("Data: " + myIntData); 
-
-
+        
     }
 }
