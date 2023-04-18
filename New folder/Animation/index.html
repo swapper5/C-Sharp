@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.rectangle{
+  width: 400px;
+  height: 200px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.circle {
+  height: 250px;
+  width: 250px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.triangle {
+            width: 0; 
+            height: 60; 
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid ;
+  
+            margin: 2rem;
+            animation-name: example;
+            animation-duration: 4s;
+            }
+
+@keyframes example {
+  from {background-color: rgb(231, 60, 60);}
+  to {background-color: rgb(122, 122, 8);}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div class="square"></div>
+<br/>
+<div class="rectangle"></div>
+<br/>
+
+<span class="circle"></span>
+
+<br />
+<div class="triangle"></div>
+
+
+
+</body>
+</html>
