@@ -1,109 +1,64 @@
-<html lang="en">
- 
+<!DOCTYPE html>
+<html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+<style> 
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.rectangle{
+  width: 400px;
+  height: 200px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.circle {
+  height: 250px;
+  width: 250px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.triangle {
+            width: 0; 
+            height: 60; 
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+              
+            border-bottom: 50px solid ;
+  
+            margin: 2rem;
+            animation-name: example;
+            animation-duration: 4s;
+            }
+
+@keyframes example {
+  from {background-color: rgb(231, 60, 60);}
+  to {background-color: rgb(122, 122, 8);}
+}
+</style>
 </head>
- 
 <body>
-    <div class="full">
-        <div class="left">
-            <div class="image">
-                <img src=
-"photo.jpg"
-                     
-                     style="width:100px;height:100px;">
-            </div>
-            <div class="Contact">
-                <h2>Contact</h2>
-                <p><b>Email id:</b>kmpravin5@gmail.com</p>
-                <p><b>Mobile no :</b>7903355910</p>
-            </div>
-            <div class="Skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li><b>Programming Languages :
-                      Python</b></li>
-                    <li><b>Frontend : HTML5, CSS3,
-                      JavaScript, React</b></li>
-                    <li><b>Backend : Node.js</b></li>
-                </ul>
-            </div>
-            <div class="Language">
-                <h2>Language</h2>
-                <ul>
-                    <li>English</li>
-                    <li>Hindi</li>
-                </ul>
-            </div>
-            <div class="Hobbies">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Playing cricket</li>
-                    <li>Playing basketball</li>
-                </ul>
-            </div>
-        </div>
-        <div class="right">
-            <div class="name">
-                <h1>Pravin Kumar</h1>
-            </div>
-            <div class="title">
-                <p>MERN fullstack Developer</p>
-            </div>
-            <div class="Summary">
-                <h2>Summary</h2>
-                <p>To secure a challenging position in a
-                  reputable organization
-                    to expand my learning knowledge and skill
-                </p>
-            </div>
-            <div class="Experience">
-                <h2>Experience</h2>
-                <h3>Internship in Wipro - Fullstack web developer</h3>
-                <p>Febraury 2022 to April 2022</p>
-                <ul>
-                    <li>Actively engaged in web creative
-                      design and development.</li>
-                    <li>Designing project & planning</li>
-                </ul>
-                <br/>
-                <h3>Training in Stackroute - MERN fullstack web developer</h3>
-                <p>June 2022 to September 2022</p>
-                <ul>
-                    
-                    <li>Instagram clone project as capstone project</li>
-                    <li>Worked with the team</li>
-                </ul>
-            </div>
-            <div class="Education">
-                <h2>Education</h2>
-                <table>
-                    <tr>
-                        <th>Dayananda Sagar academy of technology and management  </th>
-                        <th>Passing year-2022  </th>
-                        <th>percentage/cgpa 7.3</th>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div class="project">
-                <h2>Project</h2>
-                <ul>
-                    <li>
-                        <h2>Instagram clone</h2>
-                        <p>This project is based on Reactjs
-                          & Mongodb</p>
-                    </li>
-                    <br/>
-                    <li>
-                        <h2>Random password generator </h2>
-                        <p>This project is based on generating random password using python
-                          </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
+<h1>CSS Animation</h1>
+
+<div class="square"></div>
+<br/>
+<div class="rectangle"></div>
+<br/>
+
+<span class="circle"></span>
+
+<br />
+<div class="triangle"></div>
+
+
+
 </body>
- 
 </html>
